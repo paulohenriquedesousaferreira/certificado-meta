@@ -9,7 +9,7 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background:#eee;
+    background:#ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@ body{
 
 /* Instrução para o usuário */
 .instrucao {
-    background: #fff;
+    background: #ffffff;
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 8px;
@@ -29,7 +29,7 @@ body{
     width:1000px;
     height:700px;
     margin:30px auto;
-    background:#f5f5f5;
+    background:#ffffff;
     position:relative;
     box-shadow:0 0 20px rgba(0,0,0,0.2);
     overflow:hidden;
@@ -38,10 +38,10 @@ body{
 /* LADO AZUL */
 .lateral{
     position:absolute;
-    width:300px;
-    height:100%;
+    width:350px;
+    height:85%;
     background: url(Gemini_Generated_Image_.png) no-repeat center center / cover ;
-    opacity: 0.3;
+    opacity: 0.9;
 }
 
 .faixa{
@@ -111,25 +111,40 @@ h1{
 }
 
 /* MEDALHA EDITÁVEL */
-.medalha{
-    position:absolute;
-    bottom:120px;
-    left:220px;
-    width:120px;
-    height:120px;
-    background:goldenrod;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    font-size:12px;
-    color:#fff;
+/* MEDALHA EDITÁVEL - ESTILO OURO */
+.medalha {
+    position: absolute;
+    bottom: 120px;
+    left: 220px;
+    width: 120px;
+    height: 120px;
+    
+    /* Cor de Ouro com Degradê */
+    background: linear-gradient(135deg, #ffd700 0%, #ffb800 50%, #e6a700 100%);
+    
+    /* Formato e Borda */
+    border-radius: 50%;
+    border: 5px solid #d4af37; /* Borda dourada sólida */
+    
+    /* Sombras para profundidade (Efeito 3D) */
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3);
+    
+    /* Alinhamento do Conteúdo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    /* Texto */
+    font-size: 12px;
+    color: #5c4300; /* Marrom escuro para contrastar com o ouro */
     font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+    
     outline: none;
     z-index: 10;
 }
-
 /* ASSINATURAS */
 .assinaturas{
     display:flex;
@@ -211,7 +226,7 @@ h1{
 
         <p class="texto">
             Certificamos que <strong contenteditable="true">Adão Emanuel de Araujo</strong>, 
-            atuando na equipe <strong contenteditable="true">AGLL060m</strong>. <br>
+            atuando na equipe <strong contenteditable="true">AGLL001M</strong>. <br>
             <span contenteditable="true">"Grandes conquistas são fruto de grandes parcerias. Agradecemos por vestir a camisa e por demonstrar que, com foco e colaboração, não existem limites para o que podemos alcançar juntos. Parabéns pelo excelente trabalho!"</span>
         </p><br>
 
@@ -222,7 +237,7 @@ h1{
             </div>
 
             <div class="assinatura" contenteditable="true">
-                Adão Manuel de Araujo<br>
+                ADÃO EMANUEL DE ARAUJO<br>
                 Instalador Elétrico 1
             </div>
         </div>
