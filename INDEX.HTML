@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Certificado - Construtora Energia</title>
+
+<style>
+/* Estilo para visualização na tela */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Instrução para o usuário */
+.instrucao {
+    background: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+.certificado{
+    width:1000px;
+    height:700px;
+    margin:30px auto;
+    background:#f5f5f5;
+    position:relative;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+/* LADO AZUL */
+.lateral{
+    position:absolute;
+    width:300px;
+    height:100%;
+    background: url(Gemini_Generated_Image_.png) no-repeat center center / cover ;
+    opacity: 0.3;
+}
+
+.faixa{
+    position:absolute;
+    left:250px;
+    width:110px;
+    height:100%;
+    background:#1d4f91;
+    transform:skewX(-20deg);
+}
+
+/* LOGO */
+.logo{
+    position:absolute;
+    top:610px;
+    left: 730px;
+    width:250px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* CONTEUDO */
+.conteudo{
+    margin-left:350px;
+    padding:10px;
+    text-align:center;
+}
+
+h1{
+    font-size:50px;
+    color:#0b2c5f;
+    margin-bottom:0;
+}
+
+.sub{
+    letter-spacing:4px;
+    color:#1d4f91;
+    margin-bottom:40px;
+}
+
+/* Campo Editável de Nome */
+.nome {
+    font-family: 'Georgia', serif;
+    font-size: 45px;
+    color: #1d4f91;
+    margin: 30px 0;
+    padding: 5px;
+    border: 1px dashed transparent;
+    transition: border 0.3s;
+    outline: none;
+    display: inline-block;
+    min-width: 300px;
+}
+
+.nome:hover {
+    border: 1px dashed #1d4f91;
+    cursor: text;
+}
+
+.texto{
+    color:#555;
+    font-size:16px;
+    line-height:1.5;
+    outline: none;
+}
+
+/* MEDALHA EDITÁVEL */
+.medalha{
+    position:absolute;
+    bottom:120px;
+    left:220px;
+    width:120px;
+    height:120px;
+    background:goldenrod;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:12px;
+    color:#fff;
+    font-weight: bold;
+    outline: none;
+    z-index: 10;
+}
+
+/* ASSINATURAS */
+.assinaturas{
+    display:flex;
+    justify-content:space-between;
+    margin-top:50px;
+}
+
+.assinatura{
+    width:230px;
+    border-top:2px solid #000;
+    padding-top:10px;
+    font-size:12px;
+    outline: none;
+}
+
+/* BOTÃO DE DOWNLOAD */
+.btn-download {
+    margin: 20px 0 50px 0;
+    padding: 15px 30px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    background-color: #219150;
+}
+
+/* CONFIGURAÇÃO PARA IMPRESSÃO/PDF */
+@media print {
+    body { background: none; }
+    .btn-download, .instrucao { display: none; }
+    .nome:hover { border: none; }
+    .certificado { 
+        margin: 0; 
+        box-shadow: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="instrucao">
+    💡 <strong>Dica:</strong> Clique em qualquer nome ou texto abaixo para editar. Depois, clique no botão verde para salvar.
+</div>
+
+<div class="certificado" id="certificado">
+
+    <div class="lateral"></div>
+    <div class="faixa"></div>
+
+    <div class="logo">
+        <img src="/Logo_Construtora_Energia-_horizontal_-_colorido_(2)[1].png" width="250px" alt="Logo">
+    </div>
+
+    <!-- Mês/Ano editável -->
+    <div class="medalha" contenteditable="true">
+        EXCELÊNCIA<br>TÉCNICA<br>FEVEREIRO - 2026
+    </div>
+
+    <div class="conteudo">
+        <h1>CERTIFICADO</h1>
+        <div class="sub">DE RECONHECIMENTO</div>
+
+        <p>Temos a honra de homenagear:</p>
+
+        <!-- Nome principal editável -->
+        <div class="nome" contenteditable="true">Adão Emanuel de Araujo</div>
+
+        <p class="texto">
+            Certificamos que <strong contenteditable="true">Adão Emanuel de Araujo</strong>, 
+            atuando na equipe <strong contenteditable="true">AGLL001M</strong>. <br>
+            <span contenteditable="true">"Grandes conquistas são fruto de grandes parcerias. Agradecemos por vestir a camisa e por demonstrar que, com foco e colaboração, não existem limites para o que podemos alcançar juntos. Parabéns pelo excelente trabalho!"</span>
+        </p><br>
+
+        <div class="assinaturas">
+            <div class="assinatura" contenteditable="true">
+                VALDEMI PEREIRA<br>
+                Coordenador de Operações
+            </div>
+
+            <div class="assinatura" contenteditable="true">
+                Adão Manuel de Araujo<br>
+                Instalador Elétrico 1
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<button class="btn-download" onclick="window.print()">GERAR PDF / IMPRIMIR</button>
+
+</body>
+</html>
